@@ -1,0 +1,97 @@
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.mobile-nav a {
+  color: #000000;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.mobile-nav a:hover {
+    color: #676565;
+    border-bottom: 3px solid #e91e61;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .hide {
+        transform: translateX(-768px);
+        }
+    .sidebar {
+        height: 100vh;
+        width: 80%;     
+        background-color: #CFE2FF;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+        z-index: 8;
+    }
+
+    .hero-section {
+        margin-top: 15px;
+      }
+
+      .content {
+        margin: 1.2rem 0;
+        text-align: center;
+      }
+
+      .blob {
+        width: 300px;
+        height: 300px;
+        float: none;
+      }
+
+    .content-btn {
+        display: block;
+        width: 100%;
+    }  
+
+    .content-btn button {
+        margin: 10px;
+        padding: 1px 20px;
+        border-radius: 20px;
+        font-size: 1.25em;
+        cursor: pointer;
+        transition: all ease-in-out .15s;
+        align-items: center;
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+    .contact-img {
+    display: none;
+    }
+
+    .footer-social {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+}
+ @media only screen and (max-width: 426px ) {
+
+    .hide {
+        transform: translateX(-360px);
+          }
+
+    .my-name {
+            font-size: 18px;
+          }
+          
+    .content h2{
+            font-size: 2rem;
+          }
+
+}

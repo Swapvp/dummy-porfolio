@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #4384e6;
+}
+
+.padding {
+  padding: 50px 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.menu-container {
+  box-shadow: 1px 1px 5px #000000;
+  position: fixed;
+}
+
+.main-menu {
+  height: 4.2rem;
+  box-shadow: 2;
+}
+
+.desktop-menu a {
+  color: #000000;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+
+.desktop-menu a:hover {
+  color: #676565;;
+  border-bottom: 3px solid #e91e61;
+
+}
+
+/* Hero Section */
+
+.hero-section {
+  margin-top: 75px;
+}
+
+.my-name {
+  font-size: 26px;
+}
+
+.content h2{
+  font-size: 3.8em;
+}
+
+.auto-text{
+  color: var(--primary-color);
+}
+
+.content p:first-of-type {
+  color: black;
+  font-size: 2rem;
+  
+}
+.content p, .about-text{
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: rgb(59, 61, 62);
+  line-height: 2.18rem;
+}
+
+.btn-common{
+  background: #4384e6;
+  color: #fff;
+  border: none;
+}
+
+.btn-common:hover{
+  background: #0066ff;
+  box-shadow: 2px 2px 5px #000000;
+
+}
+
+.btn-outline{
+  border: 1px solid #0d6efd;
+  background: transparent;
+  color: #0d6efd;
+  margin-left: 5px;
+}
+
+.btn-outline:hover{
+  background-color:#0d6efd;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+.content-btn {
+  display: flex;
+  align-items: center;
+}
+
+.content-btn button {
+  padding: 0.75rem 1.2rem ;
+    border-radius: 20px;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: all ease-in-out .15s;
+    align-items: center;
+}
+
+.hero-social {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+
+/* blob */
+.blob{
+  background-image: url(https://thumbs.dreamstime.com/b/african-american-student-girl-holding-books-black-people-50767474.jpg);
+  width: 380px;
+  height: 380px;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  margin: auto;
+  float: inline-end;
+}
+
+@keyframes animate {
+  0%, 100%{
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+/* About me  */
+
+.section-title {
+  margin: 15px 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.skills {
+  margin: 20px 0;
+}
+
+.skills img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.skills span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project-card {
+  width: 320px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 8px solid #797979;
+  background-color: #797979;
+  position: relative;
+  margin: 15px auto;
+
+}
+
+.project-card img {
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #0000002e;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.8s ease;
+
+}
+.project-card:hover  .card-body { 
+  right:0;
+}
+
+
+.project-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.card-body i {
+  font-size: 22px;
+  margin: 0 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Form */
+
+form {
+  margin-top: 50px;
+}
+
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+.submit{
+	border: none;
+	background-color: var(--primary-color);
+	color: white;
+	/* width: 200px; */
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.submit:hover{
+	/* background-color: #333333; */
+	background-color: hsl(216, 77%, 48%);
+
+}
+
+.contact-img {
+  width: 80%;
+  object-fit: cover;
+  
+}
+
+
+
+/* CSS for the loader and overlay */
+.loader-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+  }
+  
+  .loader {
+	border: 4px solid rgba(255, 255, 255, 0.3);
+	border-left: 4px solid #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  /* Footer */
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+
+  .footer-social {
+    font-size: 30px;
+    margin: 0 5px;
+}
